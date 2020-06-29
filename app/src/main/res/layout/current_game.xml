@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/darkocean"
+            >
+
+        <TextView
+            android:id="@+id/BattleShip"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/humanBoard"
+            android:layout_alignLeft="@+id/humanBoard"
+            android:layout_alignTop="@+id/humanBoard"
+            android:layout_alignEnd="@+id/computerBoard"
+            android:layout_alignRight="@+id/computerBoard"
+            android:layout_marginStart="207dp"
+            android:layout_marginLeft="207dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginRight="-2dp"
+            android:text="@string/battleship_warfare"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="22sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/quitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newButton"
+            android:layout_alignLeft="@+id/newButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="247dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="49dp"
+            android:text="@string/quit"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/newButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BattleShip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="245dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="51dp"
+            android:layout_toRightOf="@+id/humanBoard"
+            android:text="@string/new_button_label"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <com.example.dani_pc.bobo.BoardView
+                android:id="@+id/humanBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/computerBoard"
+                android:layout_alignLeft="@+id/computerBoard"
+                android:layout_alignRight="@+id/computerBoard"
+                android:layout_alignStart="@+id/computerBoard"
+                android:layout_marginBottom="106dp"
+                android:layout_marginEnd="172dp"
+                android:layout_marginRight="172dp"
+                android:layout_marginTop="30dp"
+                />
+
+        <com.example.dani_pc.bobo.BoardView
+                android:id="@+id/computerBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="280dp"
+                />
+        <TextView
+                android:text="@string/type_of_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentPlayerName" android:layout_above="@+id/BattleShip"
+                android:layout_alignStart="@+id/humanBoard" android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/opponentsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/computerBoard"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="277dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/type_of_player2"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BattleShip Warfare</string>
+    <string name="main_screen_image">mainScreenImage</string>
+    <string name="battleship_warfare_text">Battleship Warfare</string>
+    <string name="new_game_button">New\nGame</string>
+    <string name="displayed_icon">icon</string>
+    <string name="select_difficulty">Select Difficulty</string>
+
+    <string-array name="difficulty_spinner">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+
+
+
+
+    <string name="next">Next</string>
+    <string name="new_button_label">New</string>
+    <string name="battleship">BATTLESHIP</string>
+    <string name="number_of_shots_0"># Shots Fired: 0</string>
+    <string name="aircraft">Aircraft</string>
+    <string name="battleship2">Battleship</string>
+    <string name="destroyer">Destroyer</string>
+    <string name="patrol">Patrol</string>
+    <string name="submarine">Submarine</string>
+    <string name="play_again">Play Again?</string>
+    <string name="the_winner">The Winner!</string>
+    <string name="quit_game">Quit Game</string>
+    <string name="battleship_warfare">BattleShip Warfare</string>
+    <string name="quit">Quit</string>
+    <string name="type_of_player">Type of Player:</string>
+    <string name="type_of_player2">Type of Player2:</string>
+    <string name="topScorebutton">Highscores</string>
+    <string name="easy_level_score">Easy</string>
+    <string name="medium_level_score">Medium</string>
+    <string name="hard_level_score">Hard</string>
+    <string name="record_name">Player Name</string>
+
+
+
+</resources>
+
